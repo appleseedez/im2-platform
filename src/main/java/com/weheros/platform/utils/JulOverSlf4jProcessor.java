@@ -1,6 +1,8 @@
-/**
- * 
- */
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.utils;
 
 import javax.annotation.PostConstruct;

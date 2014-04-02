@@ -1,15 +1,15 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.utils;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
  * @ClassName: PathHelper
- * @Description: TODO
- * @author Administrator
+ * @author Yang
  * @date 2013年11月4日 下午4:28:09
  */
 public final class PathHelper {

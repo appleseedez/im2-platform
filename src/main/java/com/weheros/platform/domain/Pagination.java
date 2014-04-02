@@ -1,13 +1,14 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.domain;
 
 /**
  * @ClassName: Pagination
  * @Description: paginate many results.
- * @author Administrator
+ * @author Yang
  * @date 2013年11月20日 下午2:47:13
  */
 public class Pagination {

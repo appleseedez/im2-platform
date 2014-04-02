@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.front;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,11 +32,11 @@ import com.weheros.platform.infrastructure.datasystem.InitializeApplicationDataA
 @RequestMapping("/simple/*")
 public class SimpleController extends AbstractController {
 
-	  public @ResponseBody Message uploadFile(HttpServletRequest request,
+	  public @ResponseBody Response uploadFile(HttpServletRequest request,
 				HttpServletResponse response,@RequestParam(value="name", required=false, defaultValue="World") String name) {
 		  RequestContextUtils.getLocale(request);
 
-	    	return new Message("200","upload success.");
+	    	return new Response("200","upload success.");
 	}
 	/**
 	 *  能够接受JSON,XML,JSP请求
@@ -49,7 +50,7 @@ public class SimpleController extends AbstractController {
 	@RequestMapping(value="saywel",method = RequestMethod.GET)	
 	public String welcome2(ModelMap model){
 		
-		model.addAttribute("message",new Message("200","Welcome to simplecontroller"));
+		model.addAttribute("message",new Response("200","Welcome to simplecontroller"));
 		
 		return "content";
 	}
@@ -64,25 +65,25 @@ public class SimpleController extends AbstractController {
 	 */
 	@RequestMapping(value="saveMessage",method = RequestMethod.POST)
 	@ResponseBody
-	public Message recieveJson(@RequestBody Message newMessage, ModelMap model){
+	public Response recieveJson(@RequestBody Response newMessage, ModelMap model){
 		log.info("---------post the message-----------"+newMessage.getMsg());
-		return new Message("9999","recieveJson is success.");
+		return new Response("9999","recieveJson is success.");
 		
 	}
 	
 	@RequestMapping(value="postByParam",method = RequestMethod.POST)	
-	public String postByParam(@RequestBody Message newMessage,@RequestParam("jsonString") String ajson, ModelMap model){
+	public String postByParam(@RequestBody Response newMessage,@RequestParam("jsonString") String ajson, ModelMap model){
 		log.info("---------from requestParam-----------"+ajson);
 		log.info("---------from requestBody-----------"+newMessage.getMsg());
 		//return new Message("99990","recieveJson is success.");
-		model.addAttribute("message",new Message("99990","recieveJson to simplecontroller"));
+		model.addAttribute("message",new Response("99990","recieveJson to simplecontroller"));
 		return "content";
 	}
 	
 	@RequestMapping(value="getme",method = RequestMethod.GET)
 	@ResponseBody
-	public Message getJson( ModelMap model){		
-		return new Message("8888","recieveJson is success.");
+	public Response getJson( ModelMap model){		
+		return new Response("8888","recieveJson is success.");
 		
 	}
 	
@@ -91,9 +92,9 @@ public class SimpleController extends AbstractController {
 	@RequestMapping(value="getappconfig",method = RequestMethod.GET)
 	
 	public String getAppconfig( ModelMap model){		
-		Message message=new Message("8888","recieveJson is success.");
-		message.setData(initialization.getAppconfig());
-		model.addAttribute("message",message);
+		Response response=new Response("8888","recieveJson is success.");
+		response.setData(initialization.getAppconfig());
+		model.addAttribute("message",response);
 		return "content";
 	}
 	

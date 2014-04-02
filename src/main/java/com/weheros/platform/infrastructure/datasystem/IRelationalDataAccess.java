@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.infrastructure.datasystem;
 
 import java.util.List;
@@ -11,9 +12,7 @@ import org.springframework.jdbc.core.RowMapper;
 
 /**
  * @ClassName: IRelationalDataAccess
- * @Description: TODO
  * @author Yang
- * @param <T>
  * @date 2013年10月28日 下午5:23:52
  *
  */

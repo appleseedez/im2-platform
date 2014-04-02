@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.domain;
 
 import org.bson.types.ObjectId;
@@ -10,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 /**
  * @ClassName: MongoAppConfig 
- * @author Administrator
+ * @author Yang
  * @date 2013年11月27日 下午4:57:43
  */
 @Document(collection = "appconfig")
@@ -20,6 +21,7 @@ public class MongoAppConfig {
 	/**
 	#--------------------------------------------------------------------------------
 	# FileSystemAccess
+	# Now is FastDFS
 	#-------------------------------------------------------------------------------
     */
 	private String fileSystemAccess="local";

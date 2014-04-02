@@ -1,12 +1,13 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.exception;
 
 /**
  * @ClassName: InfrastructureException 
- * @author Administrator
+ * @author Yang
  * @date 2013年11月4日 下午4:07:59
  */
 public class InfrastructureException extends RuntimeException {

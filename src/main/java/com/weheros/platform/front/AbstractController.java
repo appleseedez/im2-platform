@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.front;
 
 import java.util.Locale;
@@ -29,20 +30,20 @@ public abstract class AbstractController {
      *  构建国际化的message
       * @author Yang
       * @param definition 代码定义  @see CodeDefinition
-      * @param message
+      * @param response
       * @param valuses
       * @param request
       * @return 
       * Message
       *
      */
-	public Message constructInternationalMessage(CodeDefinition definition, Message message,
+	public Response constructInternationalMessage(CodeDefinition definition, Response response,
 			Object[] valuses, HttpServletRequest request) {
 		Locale locale = RequestContextUtils.getLocale(request);
 		String internationalation = messageSource.getMessage(definition.getInternationalMessageCode(),valuses, locale);
-		message.setCode(definition.getCode());
-		message.setMsg(internationalation);
-		return message;
+		response.setCode(definition.getCode());
+		response.setMsg(internationalation);
+		return response;
 	}
 	public String constructInternationalMessage(String key,Object[] valuses, HttpServletRequest request) {
 		Locale locale = RequestContextUtils.getLocale(request);

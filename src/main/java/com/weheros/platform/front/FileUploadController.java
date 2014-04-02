@@ -1,7 +1,8 @@
-/**
- * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
- */
-	
+/*
+* Copyright HZCW (He Zhong Chuang Wei) Technologies Co.,Ltd. 2013-2015. All rights reserved.
+*
+*
+*/
 package com.weheros.platform.front;
 
 import javax.servlet.http.HttpServletRequest;
@@ -28,11 +29,11 @@ public class FileUploadController {
 	FileUploadService fileUploadService;
 	
     @RequestMapping("/uploadFile")
-    public @ResponseBody Message uploadFile(HttpServletRequest request,
+    public @ResponseBody Response uploadFile(HttpServletRequest request,
 			HttpServletResponse response,@RequestParam(value="name", required=false, defaultValue="World") String name) {
       
     	
     	fileUploadService.upload(request);
-    	return new Message("200","upload success.");
+    	return new Response("200","upload success.");
     }
 }
