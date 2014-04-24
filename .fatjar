@@ -1,10 +1,10 @@
 #Fat Jar Configuration File
-#Tue Apr 01 17:58:01 CST 2014
+#Thu Apr 24 18:39:24 CST 2014
 onejar.license.required=true
 manifest.classpath=
 manifest.removesigners=true
 onejar.checkbox=false
-jarname=im2-platform.jar
+jarname=im2-platform-1.0.jar
 manifest.mergeall=true
 manifest.mainclass=
 manifest.file=<createnew>
