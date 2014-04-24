@@ -62,6 +62,7 @@ public class SolrSearchEngineAccess implements ISearchEngineAccess {
 		QueryResponse response = request.process(SolrServerFactory.buildSolrServer());
 		return response.getResults();
     }
+    
 
 	@Override
 	public <T> List<T> query(SolrQuery query, Class<T> entityClass) throws SolrServerException {

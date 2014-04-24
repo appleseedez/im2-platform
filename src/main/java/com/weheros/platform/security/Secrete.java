@@ -6,7 +6,8 @@
 package com.weheros.platform.security;
 
 /**
- * @author Administrator
+ * Will be implemented sometime.
+ * @author Yang
  * @version 1.0
  * @created 28-03-2014 14:50:35
  */
