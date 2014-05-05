@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.support.RequestContextUtils;
 
-import com.weheros.platform.infrastructure.datasystem.InitializeApplicationDataAndParameters;
+import com.weheros.platform.infrastructure.datasystem.nosql.InitializeApplicationDataAndParameters;
 
 
 /**
@@ -87,15 +87,6 @@ public class SimpleController extends AbstractController {
 		
 	}
 	
-	@Autowired	 
-	InitializeApplicationDataAndParameters initialization;
-	@RequestMapping(value="getappconfig",method = RequestMethod.GET)
-	
-	public String getAppconfig( ModelMap model){		
-		Response response=new Response("8888","recieveJson is success.");
-		response.setData(initialization.getAppconfig());
-		model.addAttribute("message",response);
-		return "content";
-	}
+
 	
 }

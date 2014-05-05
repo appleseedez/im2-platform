@@ -1,4 +1,4 @@
-package com.itel.platform.test;
+package com.weheros.platform.test;
 
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractTransactionalJUnit4SpringContextTests;

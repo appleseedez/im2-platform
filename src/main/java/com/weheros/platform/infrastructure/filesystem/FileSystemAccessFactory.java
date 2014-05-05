@@ -8,7 +8,7 @@ package com.weheros.platform.infrastructure.filesystem;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.weheros.platform.infrastructure.datasystem.InitializeApplicationDataAndParameters;
+import com.weheros.platform.infrastructure.datasystem.nosql.InitializeApplicationDataAndParameters;
 /**
  * @ClassName: FileSystemAccessFactory
  * @Description: 构建filesystemaccess

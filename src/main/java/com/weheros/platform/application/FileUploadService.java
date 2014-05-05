@@ -26,8 +26,8 @@ import com.weheros.platform.utils.PathHelper;
  */
 @Service("fileUploadService")
 public class FileUploadService {
-	@Autowired
-	FileSystemAccessFactory factory;
+	//@Autowired
+	//FileSystemAccessFactory factory;
 	
 	public void upload(HttpServletRequest request) {
 		long maxSize = 2 * 1024 * 1024 * 1024 ;
@@ -41,7 +41,7 @@ public class FileUploadService {
 			throw new RuntimeException("getItemIterator error.",e);
 		}
 		
-		factory.buildFileSystemAccess().fileStore(fileIterator, PathHelper.getAbsoluteServletPath(request));
+		//factory.buildFileSystemAccess().fileStore(fileIterator, PathHelper.getAbsoluteServletPath(request));
 		
 	}
 

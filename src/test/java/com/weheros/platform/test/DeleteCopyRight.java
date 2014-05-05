@@ -1,5 +1,5 @@
 
-package com.itel.platform.test;
+package com.weheros.platform.test;
 
 import java.io.BufferedReader;
 import java.io.File;

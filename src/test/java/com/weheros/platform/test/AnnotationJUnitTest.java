@@ -2,7 +2,7 @@
  * Copyright (c) 2011-2013 iTel Technology Inc,All Rights Reserved.
  */
 	
-package com.itel.platform.test;
+package com.weheros.platform.test;
 
 import java.nio.charset.Charset;
 

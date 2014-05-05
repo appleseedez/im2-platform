@@ -1,7 +1,8 @@
-package com.itel.platform.test;
+package com.weheros.platform.test;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+
 
 public class MD5Util {
 	public final static String MD5(String s) {

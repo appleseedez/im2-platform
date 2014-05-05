@@ -3,7 +3,7 @@
 *
 *
 */
-package com.weheros.platform.infrastructure.datasystem;
+package com.weheros.platform.infrastructure.datasystem.nosql;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

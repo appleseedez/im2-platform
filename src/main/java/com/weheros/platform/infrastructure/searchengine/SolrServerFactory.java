@@ -22,7 +22,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.xml.sax.SAXException;
 
-import com.weheros.platform.infrastructure.datasystem.InitializeApplicationDataAndParameters;
+import com.weheros.platform.infrastructure.datasystem.nosql.InitializeApplicationDataAndParameters;
 
 
 /**

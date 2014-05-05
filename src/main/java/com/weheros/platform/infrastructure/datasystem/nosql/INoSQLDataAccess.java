@@ -3,13 +3,16 @@
 *
 *
 */
-package com.weheros.platform.infrastructure.datasystem;
+package com.weheros.platform.infrastructure.datasystem.nosql;
 
 import java.util.List;
 import java.util.Map;
 
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Query;
+
+import com.weheros.platform.infrastructure.datasystem.IDataSystemAccess;
+import com.weheros.platform.infrastructure.datasystem.MongoDataAccessServiceTest;
 
 /**
  * @ClassName: INoSQLDataAccess

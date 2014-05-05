@@ -17,8 +17,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 
-import com.itel.platform.test.GenericJunitTestCase;
-
+import com.weheros.platform.infrastructure.datasystem.nosql.INoSQLDataAccess;
+import com.weheros.platform.test.GenericJunitTestCase;
 import com.weheros.platform.utils.ToJson;
 
 /**

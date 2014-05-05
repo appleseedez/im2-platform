@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 
-import com.itel.platform.test.GenericJunitTestCase;
+import com.weheros.platform.test.GenericJunitTestCase;
 
 /**
  * @ClassName: RedisTemplateTest

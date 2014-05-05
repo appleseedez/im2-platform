@@ -3,7 +3,7 @@
 *
 *
 */
-package com.weheros.platform.infrastructure.datasystem;
+package com.weheros.platform.infrastructure.datasystem.nosql;
 
 import java.util.Iterator;
 import java.util.List;
